@@ -15,6 +15,28 @@ visionos:
       ha-card-background: rgba(0, 0, 0, 0.3)
       app-theme-color: rgb(0, 0, 0)
   # Global
+
+  ###### WFF ##############
+  # Global Styles
+  ha-select:
+    z-index: 1000 !important;
+  .select-container:
+    z-index: 1000 !important;
+  ha-card:before:
+    content: ''
+    display: block
+    position: absolute
+    width: calc(100% - 2px)
+    height: calc(100% - 2px)
+    left: 0
+    top: 0
+    margin: 1px
+    pointer-events: none
+    backdrop-filter: blur(10px)
+    inset: 0
+    clip-path: inset(0 round 20px)
+    z-index: -1
+  ####### End WFF ###########
   lovelace-background: var(--background-image)
   primary-color: var(--orange-color)
   light-primary-color: "#B6B6C1" # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -59,7 +81,7 @@ visionos:
   paper-card-background-color: var(--ha-card-background)
   rgb-card-background-color: rgb(10, 10, 10) # see https://github.com/basnijholt/lovelace-ios-themes/issues/60
   ha-card-border-width: 0 # https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/82#event-7732695357
-  ha-card-backdrop-filter: blur(20px)
+  # ha-card-backdrop-filter: blur(20px)
   ha-card-box-shadow: 0.5px 0.5px 1px 0px rgba(255, 255, 255, 0.40) inset, -0.5px -0.5px 1px 0px rgba(255, 255, 255, 0.10) inset, 0px 1px 2px 0px rgba(0, 0, 0, 0.10)
   # Toggles
   paper-toggle-button-checked-button-color: "#484848"
