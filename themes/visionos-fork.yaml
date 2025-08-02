@@ -1,4 +1,25 @@
 visionos-fork:
+  card-mod-theme: visionos-fork
+  # Header
+  card-mod-root-yaml: |
+    ha-select:
+      z-index: 1000 !important;
+    .select-container:
+      z-index: 1000 !important;
+    ha-card:before:
+      content: ''
+      display: block
+      position: absolute
+      width: calc(100% - 2px)
+      height: calc(100% - 2px)
+      left: 0
+      top: 0
+      margin: 1px
+      pointer-events: none
+      backdrop-filter: blur(10px)
+      inset: 0
+      clip-path: inset(0 round 20px)
+      z-index: -1
   modes:
     light:
       background-image: "center / cover no-repeat fixed url('https://raw.githubusercontent.com/Nezz/homeassistant-visionos-theme/1.1/themes/day.jpg')"
@@ -16,12 +37,6 @@ visionos-fork:
       app-theme-color: rgb(0, 0, 0)
   # Global
 
-  ###### WFF ##############
-  # Global Styles
-  ha-select: "z-index: 1000 !important;"
-  .select-container: "z-index: 1000 !important;"
-  ha-card:before: "content: '';    display: block;    position: absolute;    width: calc(100% - 2px);    height: calc(100% - 2px);    left: 0;    top: 0;    margin: 1px;    pointer-events: none;    backdrop-filter: blur(10px);    inset: 0;    clip-path: inset(0 round 20px);    z-index: -1;"
-  ####### End WFF ###########
   lovelace-background: var(--background-image)
   primary-color: var(--orange-color)
   light-primary-color: "#B6B6C1" # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
