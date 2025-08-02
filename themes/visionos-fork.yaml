@@ -18,24 +18,9 @@ visionos:
 
   ###### WFF ##############
   # Global Styles
-  ha-select:
-    z-index: 1000 !important;
-  .select-container:
-    z-index: 1000 !important;
-  ha-card:before:
-    content: ''
-    display: block
-    position: absolute
-    width: calc(100% - 2px)
-    height: calc(100% - 2px)
-    left: 0
-    top: 0
-    margin: 1px
-    pointer-events: none
-    backdrop-filter: blur(10px)
-    inset: 0
-    clip-path: inset(0 round 20px)
-    z-index: -1
+  ha-select: "z-index: 1000 !important;"
+  .select-container: "z-index: 1000 !important;"
+  ha-card:before: "content: '';    display: block;    position: absolute;    width: calc(100% - 2px);    height: calc(100% - 2px);    left: 0;    top: 0;    margin: 1px;    pointer-events: none;    backdrop-filter: blur(10px);    inset: 0;    clip-path: inset(0 round 20px);    z-index: -1;"
   ####### End WFF ###########
   lovelace-background: var(--background-image)
   primary-color: var(--orange-color)
