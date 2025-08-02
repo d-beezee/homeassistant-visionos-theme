@@ -1,6 +1,6 @@
 {
   "name": "visionOS fork Theme",
   "homeassistant": "2024.5.0b0",
-  "filename": "visionos.yaml",
+  "filename": "visionos-fork.yaml",
   "render_readme": true
 }
