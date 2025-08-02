@@ -79,6 +79,7 @@ visionos-fork:
   rgb-card-background-color: rgb(10, 10, 10) # see https://github.com/basnijholt/lovelace-ios-themes/issues/60
   ha-card-border-width: 0 # https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/82#event-7732695357
   # ha-card-backdrop-filter: blur(20px)
+  ha-dialog-backdrop-filter: blur(20px)
   ha-card-box-shadow: 0.5px 0.5px 1px 0px rgba(255, 255, 255, 0.40) inset, -0.5px -0.5px 1px 0px rgba(255, 255, 255, 0.10) inset, 0px 1px 2px 0px rgba(0, 0, 0, 0.10)
   # Toggles
   paper-toggle-button-checked-button-color: "#484848"
@@ -94,11 +95,11 @@ visionos-fork:
   switch-unchecked-track-color: var(--disabled-text-color)
   switch-unchecked-button-color: "#FFF"
   # Dialog
-  ha-dialog-surface-backdrop-filter: var(--ha-card-backdrop-filter)
+  ha-dialog-surface-backdrop-filter: var(--ha-dialog-backdrop-filter)
   dialog-box-shadow: var(--ha-card-box-shadow)
   ha-dialog-surface-background: var(--ha-card-background)
   # Header
-  app-header-backdrop-filter: var(--ha-card-backdrop-filter)
+  app-header-backdrop-filter: var(--ha-dialog-backdrop-filter)
   app-header-edit-background-color: rgba(0, 0, 0, 0.2)
   # Colors
   red-color: "#FF453A"
